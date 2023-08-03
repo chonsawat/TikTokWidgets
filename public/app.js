@@ -237,15 +237,15 @@ connection.on('like', data => {
 
     let announcementSound = null;
     const optionCase = data.likeCount;
-    if (optionCase>=5 & optionCase < 10){
+    if (optionCase>=5 & optionCase < 8){
         announcementSound = Config["sounds"]["likeLevels"]["5"]
-    } else if (optionCase>=10 & optionCase < 100) {
+    } else if (optionCase>=8 & optionCase < 11) {
         announcementSound = Config["sounds"]["likeLevels"]["10"]
-    } else if (optionCase>=100 & optionCase < 500) {
+    } else if (optionCase>=11 & optionCase < 13) {
         announcementSound = Config["sounds"]["likeLevels"]["100"]
-    } else if (optionCase>=500 & optionCase < 1000) {
+    } else if (optionCase>=13 & optionCase < 15) {
         announcementSound = Config["sounds"]["likeLevels"]["500"]
-    } else if (optionCase>=1000) {
+    } else if (optionCase>=15) {
         announcementSound = Config["sounds"]["likeLevels"]["1000"]
     } else {
         announcementSound = Config["sounds"]["like"]
