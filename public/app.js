@@ -240,13 +240,13 @@ connection.on('like', data => {
     if (optionCase>=5 & optionCase < 8){
         announcementSound = Config["sounds"]["likeLevels"]["5"]
     } else if (optionCase>=8 & optionCase < 11) {
-        announcementSound = Config["sounds"]["likeLevels"]["10"]
+        announcementSound = Config["sounds"]["likeLevels"]["8"]
     } else if (optionCase>=11 & optionCase < 13) {
-        announcementSound = Config["sounds"]["likeLevels"]["100"]
+        announcementSound = Config["sounds"]["likeLevels"]["11"]
     } else if (optionCase>=13 & optionCase < 15) {
-        announcementSound = Config["sounds"]["likeLevels"]["500"]
+        announcementSound = Config["sounds"]["likeLevels"]["13"]
     } else if (optionCase>=15) {
-        announcementSound = Config["sounds"]["likeLevels"]["1000"]
+        announcementSound = Config["sounds"]["likeLevels"]["15"]
     } else {
         announcementSound = Config["sounds"]["like"]
     }
