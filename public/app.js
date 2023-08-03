@@ -208,7 +208,7 @@ connection.on("social", (data) => {
 
     $(".current").replaceWith(announcement.build());
     announcement.sound();
-
+    console.log('social event data:', data);
 })
 
 connection.on("subscribe", (data) => {
@@ -228,4 +228,22 @@ connection.on("subscribe", (data) => {
     $(".current").replaceWith(announcement.build());
     announcement.sound();
 
+})
+
+connection.on('like', data => {
+    if (!Config["enabled"]["like"]) {
+        return;
+    }
+
+    let announcement = new Announcement(
+        data["uniqueId"],
+        data["profilePictureUrl"],
+        `like x${data.likeCount} ❤️!`,
+        Config["sounds"]["like"] || null,
+        true
+    )
+
+    $(".current").replaceWith(announcement.build());
+    announcement.sound();
+    console.log(`${data.uniqueId} sent ${data.likeCount} likes, total likes: ${data.totalLikeCount}`);
 })

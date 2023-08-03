@@ -1,6 +1,6 @@
 {
 
-  "uniqueId": "santajclaus",
+  "uniqueId": "mrbeats420e",
   "fontSize": 64,
   "fontWeight": 800,
   "fadeIn": 2000,
@@ -11,20 +11,22 @@
 
   "sounds": {
     "gift": {
-      "rose": "/sounds/enchanted.wav",
+      "rose": "/sounds/fart.wav",
       "default": null
     },
     "subscribe": "/sounds/enchanted.wav",
-    "follow": "/sounds/enchanted.wav"
+    "follow": "/sounds/enchanted.wav",
+    "like": "/sounds/fart-small.wav"
   },
 
   "enabled": {
     "gift": true,
     "subscribe": false,
-    "follow": true
+    "follow": true,
+    "like": true
   },
 
-  "firstFollowOnly": true,
+  "firstFollowOnly": false,
 
   "volume": 0.2
 

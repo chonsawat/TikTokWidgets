@@ -54,3 +54,5 @@ See also the full list of [contributors](https://github.com/ChromegleApp/Chromeg
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## My Additional
+This program not have like sound annoucement for my using. I have append like sound feature.
