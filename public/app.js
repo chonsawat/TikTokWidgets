@@ -235,11 +235,27 @@ connection.on('like', data => {
         return;
     }
 
+    let announcementSound = null;
+    const optionCase = data.likeCount;
+    if (optionCase>=5 & optionCase < 10){
+        announcementSound = Config["sounds"]["likeLevels"]["5"]
+    } else if (optionCase>=10 & optionCase < 100) {
+        announcementSound = Config["sounds"]["likeLevels"]["10"]
+    } else if (optionCase>=100 & optionCase < 500) {
+        announcementSound = Config["sounds"]["likeLevels"]["100"]
+    } else if (optionCase>=500 & optionCase < 1000) {
+        announcementSound = Config["sounds"]["likeLevels"]["500"]
+    } else if (optionCase>=1000) {
+        announcementSound = Config["sounds"]["likeLevels"]["1000"]
+    } else {
+        announcementSound = Config["sounds"]["like"]
+    }
+
     let announcement = new Announcement(
         data["uniqueId"],
         data["profilePictureUrl"],
         `like x${data.likeCount} ❤️!`,
-        Config["sounds"]["like"] || null,
+        announcementSound || null,
         true
     )
 

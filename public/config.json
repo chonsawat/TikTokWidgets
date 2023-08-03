@@ -16,7 +16,14 @@
     },
     "subscribe": "/sounds/enchanted.wav",
     "follow": "/sounds/enchanted.wav",
-    "like": "/sounds/fart-small.wav"
+    "like": "/sounds/fart-small.wav",
+    "likeLevels": {
+      "5": "/sounds/like_levels/level5.wav",
+      "10": "/sounds/like_levels/level10.wav",
+      "100": "/sounds/like_levels/level100.wav",
+      "500": "/sounds/like_levels/level500.wav",
+      "1000": "/sounds/like_levels/level1000.wav"
+    }
   },
 
   "enabled": {
