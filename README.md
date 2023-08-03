@@ -56,3 +56,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## My Additional
 This program not have like sound annoucement for my using. I have append like sound feature.
+
+```bash
+git clone https://github.com/chonsawat/TikTokWidgets.git
+```
+Install Dependency: `npm i` had Conflict with `Axios` module installed via `yarn` instead
+```bash
+npm install --global yarn
+```
+```bash
+yarn
+```
+
+Run server
+
+```bash
+node server.js
+```
+- Edit User and Voice via `public/config.json`
+- After Run Server open Browser to [http://localhost:8082](http://localhost:8082/) (Must open sound will able to play after open the `http://localhost:8082/` first time, after that you can close the browser)
